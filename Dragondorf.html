@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dragondorf</title>
+  <!--The CSS from line 16 downwards is either created or added by me, and is not included in the CSS template.-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    .polaroid a {
+      background: #ffffff;
+      display: inline-block;
+      margin: 120px 175px 30px;
+      padding: 15px 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -webkit-transition: all .20s linear;
+      -moz-transition: all .20s linear;
+      transition: all .20s linear;
+      z-index: 0;
+      position: absolute;
+      float: right;
+    }
+    .polaroid a:after {
+      color: #333;
+      font-size: 25px;
+      content: attr(title);
+      position: relative;
+      top: 15px;
+    }
+    .polaroid img {
+      display: block;
+      width: auto;
+      height: auto;
+    }
+    .polaroid a:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+      z-index: 10;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="FinalProject.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="Evans.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Evans Gambit</a>
+    <a href="Morra.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Morra Gambit</a>
+    <a href="Dragondorf.html" class="w3-bar-item w3-button w3-padding-large w3-white">Dragondorf</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="FinalProject.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="Evans.html" class="w3-bar-item w3-button w3-padding-large">Evans Gambit</a>
+    <a href="Morra.html" class="w3-bar-item w3-button w3-padding-large">Morra Gambit</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>The Dragondorf Defense</h1>
+      <h5 class="w3-padding-32">Hikaru Nakamura shocks his opponent with the rare Dragondorf Defense</h5>
+
+      <p class="w3-text-grey" style="line-height: 2;">Previously, we've seen two opening types called "Gambits" where material is sacrificed for some sort of compensation, usually for initiative. However, to play agressive chess, it is not necessary to sacrifice material. The Dragondorf is a seldom-seen variation of the Sicilian Defense played by Black where Black combines the Dragon variation with the Najdorf variation of the Sicilian. It's a very obscure and rarely-seen variation of the Sicilian, so much so that I could not find any information on its history online. The general idea is to create a pawn storm on the Queenside after a6 and b5, and to occupy the semi-open c column with your Rook to create a menacing attack against White's castled king. Black's bishop on g7 and strategic Knight placement also helps for this purpose. Meanwhile, White should attempt an attack on the Kingside and try to arrive to the king before Black does. Due to this being a rare opening in top play, it was surprising to see Hikaru Nakamura, widely regarded as one of the best chess players in the world, play this in the French League against his GM opponent. See the result of this decision below.</p>
+    </div>
+    <div class="polaroid">
+      <a href="#" title="Hikaru Nakamura">
+        <img height="250" src="https://b.thumbs.redditmedia.com/uB8_pHpbpk0ZAzzHtgKh3QmZvCfNi9uB5uNifw25Xyo.png" alt="Hikaru Nakamura" title="Hikaru Nakamura" />
+    </div>
+  </div>
+</div>
+</div>
+<iframe id="9734349" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=9734349"></iframe><script>window.addEventListener("message",e=>{e['data']&&"9734349"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+<!-- Footer -->
+<footer>
+  <br><center><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p></center>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>

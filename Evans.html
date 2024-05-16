@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Evans Gambit</title>
+  <!--The CSS from line 16 downwards is either created or added by me, and is not included in the CSS template.-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    .polaroid a {
+      background: #ffffff;
+      display: inline-block;
+      margin: 100px 75px 30px;
+      padding: 15px 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -webkit-transition: all .20s linear;
+      -moz-transition: all .20s linear;
+      transition: all .20s linear;
+      z-index: 0;
+      position: absolute;
+      float: right;
+    }
+    .polaroid a:after {
+      color: #333;
+      font-size: 25px;
+      content: attr(title);
+      position: relative;
+      top: 15px;
+    }
+    .polaroid img {
+      display: block;
+      width: auto;
+      height: auto;
+    }
+    .polaroid a:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+      z-index: 10;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="FinalProject.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="Evans.html" class="w3-bar-item w3-button w3-padding-large w3-white">Evans Gambit</a>
+    <a href="Morra.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Morra Gambit</a>
+    <a href="Dragondorf.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Dragondorf</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="FinalProject.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="Morra.html" class="w3-bar-item w3-button w3-padding-large">Morra Gambit</a>
+    <a href="Dragondorf.html" class="w3-bar-item w3-button w3-padding-large">Dragondorf</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>The Evans Gambit</h1>
+      <h5 class="w3-padding-32">A fiery surprise by Garry Kasparov against Viswanathan Anand</h5>
+
+      <p class="w3-text-grey" style="line-height: 2">The Evans Gambit is a sacrificial opening first played by Captain Evans in the 1820s. The premise of the opening (and of gambits in general) is that White sacrifices a pawn in order to gain initiative, i.e. to develop his pieces before his opponent does. For the larger part of the 1900s, this opening was believed to be theoretically unsound, meaning that it has been proven to be inferior compared to other options that White has in the opening.  This is why it was a great surprise to see Garry Kasparov, current world chess champion, play this suspicious opening against Viswanathan Anand, widely considered the second-best chess player in the world. This wasn't during a casual game for fun either; it was played in a professional chess tournament, the 1995 Tal Memorial played in Riga, Latvia. The result of such a daring decision was a favorable one for Kasparov, and can be found below.</p>
+    </div>
+    <div class="polaroid">
+      <a href="#" title="Kasparov vs Anand">
+        <img height="250" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Kasparov-10.jpg" alt="Kasparov vs Anand" title="Kasparov vs Anand" />
+    </div>
+  </div>
+</div>
+</div>
+<iframe id="9707590" allowtransparency="true" frameborder="0" style="width:100%;border:none;" src="//www.chess.com/emboard?id=9707590"></iframe><script>window.addEventListener("message",e=>{e['data']&&"9707590"===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+30}px`)});</script>
+<!-- Footer -->
+<footer>
+  <br><center><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p></center>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>

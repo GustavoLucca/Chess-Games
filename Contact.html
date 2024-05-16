@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>W3.CSS Template</title>
+  <!--The CSS from line 16 downwards is not a part of the CSS template, and has been added and creted by me.-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    #wufoo-z1i939j51awe01d {
+      width: 1500px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="FinalProject.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="Evans.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Evans Gambit</a>
+    <a href="Morra.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Morra Gambit</a>
+    <a href="Dragondorf.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Dragondorf</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large w3-white">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="FinalProject.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="Evans.html" class="w3-bar-item w3-button w3-padding-large">Evans Gambit</a>
+    <a href="Morra.html" class="w3-bar-item w3-button w3-padding-large">Morra Gambit</a>
+    <a href="Dragondorf.html" class="w3-bar-item w3-button w3-padding-large">Dragondorf</a>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-twothird">
+    </center><div id="wufoo-zdcfp2n060h1bt"> Fill out my <a href="https://gustavolucca.wufoo.com/forms/zdcfp2n060h1bt">online form</a>. </div> <script type="text/javascript"> var zdcfp2n060h1bt; (function(d, t) { var s = d.createElement(t), options = { 'userName':'gustavolucca', 'formHash':'zdcfp2n060h1bt', 'autoResize':true, 'height':'438', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { zdcfp2n060h1bt = new WufooForm(); zdcfp2n060h1bt.initialize(options); zdcfp2n060h1bt.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+  </div>
+</div>
+</div>
+<!-- Footer -->
+<footer>
+  <br><center><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p></center>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>

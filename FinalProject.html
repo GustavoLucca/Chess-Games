@@ -1,0 +1,208 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--The css styling attributes below from line 15 downwards are either added or created by me.-->
+  <title>Chess Game Archive</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor{
+      float: right;
+      margin-left: 648px;
+      margin-right: -580px;
+      margin-top: -200px;
+      font-size: 200px;
+    }
+    .w3-twothird1{
+      float: left;
+      margin-left: -100px;
+      margin-right: 500px;
+      margin-top: 10px;
+      margin-bottom: -150px;
+    }
+    header {
+      background-image: url("PanAm2.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: gray;
+    }
+    header h1{
+      background-color: #f44336;
+      inline-size: 675px;
+    }
+    header p{
+      background-color: #f44336;
+      inline-size: 450px;
+    }
+    .PhotoGallery{
+      margin: -150px 650px 50px;
+    }
+    .w3-padding-185 {
+      padding-top: 185px!important;
+      padding-bottom: 64px!important;
+    }
+
+    .polaroid a {
+      background: #ffffff;
+      display: inline-block;
+      inline-size: 35%;
+      margin: -120px -350px 30px;
+      padding: 15px 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -webkit-transition: all .20s linear;
+      -moz-transition: all .20s linear;
+      transition: all .20s linear;
+      z-index: 0;
+      position: absolute;
+    }
+    .polaroid a:after {
+      color: #333;
+      font-size: 25px;
+      content: attr(title);
+      position: relative;
+      top: 15px;
+    }
+    .polaroid img {
+      display: block;
+      width: 75%;
+      height: auto;
+    }
+    .polaroid a:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+      z-index: 10;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    }
+    .w3-twothird{
+      margin-left: 500px;
+      margin-right: -600px;
+      margin-top: -150px;
+      margin-bottom: 0px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="FinalProject.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="Evans.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Evans Gambit</a>
+    <a href="Morra.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Morra Gambit</a>
+    <a href="Dragondorf.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Dragondorf</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="Evans.html" class="w3-bar-item w3-button w3-padding-large">Evans Gambit</a>
+    <a href="Morra.html" class="w3-bar-item w3-button w3-padding-large">Morra Gambit</a>
+    <a href="Dragondorf.html" class="w3-bar-item w3-button w3-padding-large">Dragondorf</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding: 260px 16px">
+  <center><h1 class="w3-margin w3-jumbo">Chess Game Archive</h1></center>
+  <center><p class="w3-xlarge">By Gustavo Lucca - Amateur chess player</p></center>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird1">
+      <h1>A chess game archive</h1>
+      <h5 class="w3-padding-32">Do you want to learn how to play attacking, agressive chess? You're in the right place!</h5>
+
+      <p class="w3-text-grey1">Here, we offer a chess library of games played by some of the most prominent attacking masterminds of chess: Garry Kasparov,
+        Marc Esserman, and Hikaru Nakamura. All games showcased in this website include thorough, meticulous analysis made by yours truly; the
+        objective is for my notes and my game curation to help you understand attacking, sacrificial, and agressive chess better. On top of this, all of
+        our pages include historical context and also other pieces of media related to the game or the players. I hope you enjoy!</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <div class="PhotoGallery">
+        <center><img id="imgGallery" style="border: 5px solid #555" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Kasparov-30.jpg" width="500" height="300"><br></br></center>
+        <center><button type="button" style="margin: -60px 183px -32px" onclick="changeImage()">></button> <button type="button" style="margin: -20px -333px -100px" onclick="changeImage1()"><</button></center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-185 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <div class="polaroid">
+        <a href="#" title="PanAm 2022">
+          <center><img height="50" img src="PanAm1.jpg" alt="Author of website playing chess" title="Me playing chess :)" /></center>
+      </div>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>About me</h1>
+      <h5 class="w3-padding-32">Hi! My name is Gustavo Lucca, and I play chess :)</h5>
+
+      <p class="w3-text-grey">I started playing chess when I was little, but I didn't really get into it until sophmore year of high school, when I started my school's
+        chess club. That's when I started playing competitively at tournaments and teaching chess to others, two very different facets of the game that have shown me
+        the dichotomy of chess. Ever since that start, I haven't stopped playing chess, with some of my greatest achievements so far including becoming the under-18 champion
+        at a national level and qualifying to represent Puerto Rico at the 2022 Panamerican Chess Championship. With my playing style always being agressive and attacking, I
+        decided to create this website to guide other players who desire to play wild, sacrificial chess. I hope you enjoy these games.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <br><center><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p></center>
+</footer>
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  function changeImage1()
+  {
+    if( document.getElementById("imgGallery").src == "https://upload.wikimedia.org/wikipedia/commons/c/cc/Kasparov-30.jpg" ){document.getElementById("imgGallery").src = "https://upload.wikimedia.org/wikipedia/commons/f/f6/Hikaru_Nakamura_Civitanova_Marche_Italy_2015.jpg";}
+
+    else if( document.getElementById("imgGallery").src == "https://upload.wikimedia.org/wikipedia/commons/f/f6/Hikaru_Nakamura_Civitanova_Marche_Italy_2015.jpg" ){document.getElementById("imgGallery").src = "https://live.staticflickr.com/1485/24773811985_5ae2bfd19b_b.jpg";}
+
+    else{document.getElementById("imgGallery").src = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Kasparov-30.jpg";}
+  }
+  function changeImage()
+  {
+    if( document.getElementById("imgGallery").src == "https://upload.wikimedia.org/wikipedia/commons/c/cc/Kasparov-30.jpg" ){document.getElementById("imgGallery").src = "https://live.staticflickr.com/1485/24773811985_5ae2bfd19b_b.jpg";}
+
+    else if( document.getElementById("imgGallery").src == "https://live.staticflickr.com/1485/24773811985_5ae2bfd19b_b.jpg" ){document.getElementById("imgGallery").src = "https://upload.wikimedia.org/wikipedia/commons/f/f6/Hikaru_Nakamura_Civitanova_Marche_Italy_2015.jpg";}
+
+    else{document.getElementById("imgGallery").src = "https://upload.wikimedia.org/wikipedia/commons/c/cc/Kasparov-30.jpg";}
+  }
+
+</script>
+
+</body>
+</html>
